@@ -101,6 +101,8 @@ nav button.active { background: var(--ink); color: var(--paper-bright); }
 .terms-list p { grid-column: 2; margin: 8px 0 0; color: var(--ink-soft); font-size: 11px; line-height: 1.45; }
 
 .contact-list { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+.contact-panel { justify-content: center; }
+.contact-panel .contact-list { width: 100%; margin-top: clamp(34px, 7vh, 76px); }
 .contact-list a { min-height: 100px; display: grid; grid-template-columns: auto 1fr auto; gap: 15px; align-items: center; padding: 18px 20px 18px 0; border-bottom: 1px solid var(--line); transition: background .2s ease, padding .2s ease; }
 .contact-list a:nth-child(odd) { border-right: 1px solid var(--line); }
 .contact-list a:nth-child(even) { padding-left: 20px; }
@@ -109,6 +111,17 @@ nav button.active { background: var(--ink); color: var(--paper-bright); }
 .contact-list small { font: 700 9px var(--font-geist-sans), sans-serif; color: var(--coral); text-transform: uppercase; letter-spacing: .12em; }
 .quick-contact { display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(34px, 5.7vw, 88px); border-top: 1px solid var(--line); background: var(--acid); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
 .quick-contact a { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+
+@media (min-width: 1500px) {
+  .site-shell { grid-template-rows: 84px minmax(0, 1fr); }
+  .site-header { padding-inline: clamp(52px, 4vw, 86px); }
+  .card-layout { grid-template-columns: minmax(520px, .84fr) minmax(760px, 1.16fr); }
+  .identity-panel { padding: clamp(48px, 4vw, 74px); }
+  .panel-frame { padding: clamp(54px, 5.8vw, 100px); }
+  .panel-content h2 { font-size: clamp(48px, 3.7vw, 76px); }
+  .contact-list a { min-height: 116px; }
+  .quick-contact { padding-inline: clamp(54px, 5.8vw, 100px); }
+}
 
 @keyframes panel-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -165,6 +178,7 @@ nav button.active { background: var(--ink); color: var(--paper-bright); }
   .contact-list a > span { font-size: 11px; }
   .contact-list a > svg:first-child { width: 16px; }
   .contact-list a > svg:last-child { display: none; }
+  .contact-panel .contact-list { margin-top: auto; }
   .quick-contact { padding-inline: 20px; font-size: 8px; }
 }
 
