@@ -13,19 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://g-better-apps-consultant.yohoo217.chatgpt.site'),
-  title: 'G — Independent Product Consultant',
+  metadataBase: new URL('https://yohoo217.github.io/g-name-card'),
+  title: 'aplevelup — Product Consultancy by G',
   description:
-    'G helps ambitious teams make better apps through product strategy, experience review, and senior advisory.',
+    'aplevelup helps ambitious teams make better apps through product strategy, experience review, and senior advisory.',
   openGraph: {
-    title: 'I help make better apps.',
-    description: 'G — Independent Product Consultant',
+    title: 'aplevelup — Product Consultancy by G',
+    description: 'Senior product strategy and experience advice for better apps.',
     images: ['/og.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'I help make better apps.',
-    description: 'G — Independent Product Consultant',
+    title: 'aplevelup — Product Consultancy by G',
+    description: 'Senior product strategy and experience advice for better apps.',
     images: ['/og.png'],
   },
 };
